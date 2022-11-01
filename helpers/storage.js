@@ -9,6 +9,8 @@ function getItem(key = localStorageKey) {
   let item = null
   if (json !== null) {
     item = JSON.parse(json)
+  } else {
+    setItem({})
   }
   return item
 }
